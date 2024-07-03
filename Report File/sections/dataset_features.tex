@@ -1,0 +1,19 @@
+\section{Dataset and Features}
+The dataset used for training is derived from the DeepFake Detection Challenge
+(DFDC) dataset on Kaggle. The original DFDC dataset comprises over 470GB of mp4
+videos. An analysis conducted on a 20GB sample of the dataset revealed that
+approximately 83% of the examples are deepfakes. This imbalance arises because
+each real example has been deepfaked anywhere from 1 to 22 times, with an average
+of 5.19 fakes per real image. This diversity in deepfake-generation techniques
+necessitates a robust detection approach.
+Each video in the dataset has a frame rate of 30fps and is exactly 10 seconds long.
+The videos feature individuals of various races and ages, with backgrounds ranging
+from bright indoor settings to dark outdoor scenes. To simplify the problem to image
+classification, the dataset was transformed into a collection of uniformly-sized
+images, each labeled as REAL or FAKE, with an approximate 80-20 split between real
+images and deepfakes.
+For this purpose, 5 frames were sampled from each video (at a frequency of 2
+seconds or every 60 frames) from a 100GB subset of the original video dataset. Each
+image frame was resized to (224x224) pixels, normalized by dividing by 255, and
+randomly transformed (in brightness, contrast, and saturation). Additionally, 3-4
+deepfakes corresponding to each real image were included in the dataset.

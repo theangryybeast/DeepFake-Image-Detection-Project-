@@ -1,0 +1,29 @@
+\begin{center}
+    \Large\textbf{Abstract}
+    
+\end{center}
+
+\vspace{1cm}
+
+\large
+
+\vspace{1.5 cm}
+In recent years, the rise of AI-driven face manipulation techniques, such as
+\textbf{DeepFakes}, has posed serious threats to society, emphasizing the need
+for effective detection methods. In this paper, we propose a novel
+approach called \textbf{Bi-granularity artifacts (BiG-Arts)} for detecting DeepFake
+videos. Our method exploits a key observation: DeepFake generation often
+leaves bi-granularity artifacts, comprising intrinsic and extrinsic
+components.
+\vspace{1.0cm}
+The intrinsic artifacts stem from common model operations like up-
+convolution, while extrinsic artifacts arise from post-processing steps
+blending the synthesized face into the original video. To address this, we
+frame DeepFake detection as a \textbf{multi-task learning problem}, aiming to
+predict both artifact types simultaneously.
+\vspace{1.0cm}
+By leveraging the detection of Bi-granularity artifacts, our method
+demonstrates significant improvements in both within-dataset and cross-
+dataset scenarios. Extensive experiments on various DeepFake datasets
+validate the effectiveness of our approach, leading to our method
+contributing to achieving the Top-1 rank in the DFGC competition
