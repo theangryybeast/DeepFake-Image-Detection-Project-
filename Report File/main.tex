@@ -1,0 +1,110 @@
+\documentclass[a4paper]{report}
+\usepackage[margin=2.54cm]{geometry}
+% Needed for importing graphics
+\usepackage{graphicx}
+% Needed for adding spacing
+\usepackage{setspace}
+% Needed for adding references
+\usepackage[backend=biber]{biblatex}
+% Needed for adding algorithms
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+% Needed for adding TOC for figures tables and algorithms
+\usepackage{caption}
+\usepackage{tocloft}
+% For table that spans the page and wraps each cell
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{textcomp}
+
+
+\renewcommand{\thesection}{\arabic{section}}
+\addbibresource{references.bib}
+
+% Variables
+
+\newcommand{\projectname}{DeepFake Image Detection}
+\newcommand{\companyname}{2}
+\newcommand{\cMembOne}{VINEET RAJ}
+\newcommand{\cMembTwo}{ADITYA KUMAR}
+\newcommand{\cMembThree}{RUPESH}
+
+\newcommand{\cMembOneRoll}{2106019}
+\newcommand{\cMembTwoRoll}{2106011}
+\newcommand{\cMembThreeRoll}{2106005}
+\newcommand{\rollnumber}{}
+% \newcommand{\enrollmentnumber}{}
+\newcommand{\semester}{6th}
+\newcommand{\session}{}
+\newcommand{\department}{CSE}
+\newcommand{\branch}{}
+\newcommand{\course}{Bachelor of Technology}
+\newcommand{\courseShort}{B.Tech}
+\newcommand{\collegefullname}{National Institute of Technology, Patna}
+\newcommand{\collegeshortname}{NITP}
+\newcommand{\guidename}{Dr. Rajib Ghosh}
+\newcommand{\guideDesignation}{Assistant Professor}
+\newcommand{\companyguidename}{}
+\newcommand{\companyGuideDesignation}{}
+
+
+% Add the listings package
+\usepackage{listings}
+\usepackage{xcolor} % Required for listings color definitions
+
+% Optional: Custom settings for listings
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    captionpos=b,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny,
+    showstringspaces=false,
+    tabsize=2
+}
+
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17} % You can adjust the version based on what's available in your LaTeX distribution
+
+
+\begin{document}
+    \onehalfspacing
+    \include{sections/00 title_page}
+    \include{sections/01 certificate}
+    \include{sections/011 certificate}
+    \include{sections/012 certificate}
+    %\include{sections/02 declaration}
+    \include{sections/03 acknowledgement}
+    \tableofcontents
+    % \newpage
+    % \listoffigures
+    % \newpage
+    % \listoftables
+    % \listofalgorithms
+    \include{sections/04 abstract}
+    \include{sections/05 introduction}
+    \include{sections/14 motivation}
+    \include{sections/15 objective}
+    \include{sections/06 related_work}
+    %\include{sections/research gap}
+    \include{sections/dataset_features}
+    \include{sections/proposed work}
+    % Add adv and disAdv in model desc
+    \include{sections/Implementation}
+   
+    % \include{sections/09 flow_diagram_of_proposed_model}
+    % \include{sections/10 technology_used}
+    \include{sections/11 implementation_results}
+    % \include{sections/12 roles_and_responsibilites}
+    \include{sections/13 conclusion}
+    \include{sections/references}
+     % \include{sections/refrences}
+     \vspace{-5cm}
+     \renewcommand{\bibname}{References}
+     \vspace{-1cm}
+   
+     
+
+\end{document}
